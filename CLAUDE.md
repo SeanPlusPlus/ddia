@@ -6,7 +6,7 @@ Structured notes and exercises from working through *Designing Data-Intensive Ap
 
 ## Context
 
-Sean is a Lead Software Engineer at Disney building production platforms (148+ sites, React/TypeScript) and autonomous AI agent systems on AWS (Lambda, ECS, CloudFront, CDK). He has hands-on experience with:
+Sean is a Lead Software Engineer at Disney building production platforms (AWS/React/TypeScript) and autonomous AI agent systems on AWS (Lambda, ECS, CloudFront, CDK). He has hands-on experience with:
 
 - Multi-layer caching (CloudFront, Varnish, HAProxy)
 - Event-driven architectures (Lambda, SQS, EventBridge)
