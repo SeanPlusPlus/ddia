@@ -4,7 +4,7 @@ Working through Martin Kleppmann's DDIA, 2nd edition — chapter by chapter with
 
 ## About
 
-I'm Sean Stephenson, a Lead Software Engineer at Disney with a background spanning Pixar, ESPN, and Disney Studios. I build production platforms (148+ sites) and AI agent systems on AWS. This repo is my structured study of DDIA 2e, connecting the theory to real-world systems I've built and operated.
+I'm Sean Stephenson, a Lead Software Engineer at Disney with a background spanning Pixar, ESPN, and Disney Studios. I build production platforms and AI agent systems on AWS. This repo is my structured study of DDIA 2e, connecting the theory to real-world systems I've built and operated.
 
 ## Structure
 
