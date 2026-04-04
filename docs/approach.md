@@ -3,9 +3,10 @@
 ## Method
 
 1. **Read** the chapter start to finish, no notes
-2. **Re-read** with notes — capture key concepts, diagrams, and "aha" moments
-3. **Apply** — connect each concept to a real system I've built or operated
-4. **Question** — write down what's still unclear or what I'd challenge
+2. **Debrief** — talk through what stood out, what clicked, what felt fuzzy. Claude writes the structured notes from the conversation.
+3. **Review** — edit the notes, add anything missed, commit
+4. **Apply** — connect concepts to real systems I've built or operated (inline in the notes or in `applied/`)
+5. **Question** — capture what's still unclear or what I'd challenge
 
 ## Note Template
 
