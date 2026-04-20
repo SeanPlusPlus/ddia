@@ -1,19 +1,13 @@
-# Designing Data-Intensive Applications (2nd Edition)
+# DDIA 2e Study Notes
 
-Working through Martin Kleppmann's DDIA, 2nd edition — chapter by chapter with notes, diagrams, and applied examples.
+Notes and deep-dive primers from working through *Designing Data-Intensive Applications* (2nd Edition) by Martin Kleppmann. Not exhaustive — focused on the concepts that click, challenge, or connect to real production systems.
 
 ## Structure
 
 ```
 notes/           # Chapter-by-chapter reading notes
-exercises/       # Worked examples and thought experiments
-applied/         # Connections to real systems (AWS, CDN, caching, etc.)
+applied/         # Deep-dive primers on specific concepts
 ```
-
-## Book
-
-**Designing Data-Intensive Applications**, 2nd Edition
-Martin Kleppmann | O'Reilly Media
 
 ## Progress
 
