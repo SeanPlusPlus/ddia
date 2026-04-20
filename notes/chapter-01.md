@@ -2,60 +2,23 @@
 
 ## TL;DR
 
-Most applications are **data-intensive**, not compute-intensive. The chapter frames three fundamental concerns — reliability, scalability, maintainability — as competing tensions that shape every architectural decision. Introduces OLTP vs OLAP as distinct workload categories that demand different system designs.
+Most applications are data-intensive, not compute-intensive. The chapter frames three fundamental concerns — reliability, scalability, maintainability — as competing tensions that shape every architectural decision. Also introduces OLTP vs OLAP as distinct workload categories demanding different system designs.
 
-## Key Concepts
+## Three Pillars
 
-### Three Pillars
+Reliability, scalability, and maintainability aren't independent. Optimizing one often costs another — fast iteration can introduce bugs, scaling out adds operational complexity. Every architecture is a negotiation between the three.
 
-| Pillar | Core question |
-|--------|---------------|
-| **Reliability** | Does the system work correctly when things go wrong? |
-| **Scalability** | Can the system handle growth in data, traffic, or complexity? |
-| **Maintainability** | Can the system be understood, extended, and operated over time? |
+**Reliability** is about faults, not failures. A fault is one component deviating from spec; a failure is the whole system going down. Hardware faults are random and independent — redundancy handles them well. Software and human faults correlate and cascade, making them far harder to manage.
 
-These aren't independent — optimizing one often costs another. Fast iteration (maintainability) can introduce bugs (reliability). Scaling out (scalability) adds operational complexity (maintainability).
+**Scalability** starts with describing load — not just "requests per second" but the specific parameters that matter for your system (read/write ratio, fan-out factor, concurrent users). Once you've described load, you ask: what happens to performance as it grows? Percentiles matter more than averages here — p99 tells you what your worst-off users experience, and in fan-out architectures the slowest backend call sets the pace. Vertical vs horizontal scaling has no universal answer; it depends entirely on load shape.
 
-### Reliability
+**Maintainability** breaks into operability (easy to run), simplicity (good abstractions, minimal accidental complexity), and evolvability (easy to change). Requirements will change — the system should accommodate that without rewrites.
 
-- **Faults vs failures** — a fault is a component deviating from spec; a failure is the system stopping. Goal: fault-tolerant, not fault-free.
-- Three fault categories: hardware faults, software errors, human errors.
-- Hardware faults are well-understood (redundancy). Software and human faults are harder — they correlate and cascade.
+## OLTP vs OLAP
 
-### Scalability
-
-- **Load parameters** — describe load with numbers specific to your system (requests/sec, read/write ratio, active users, fan-out). Twitter's home timeline is the canonical example: the fan-out shape of the workload drives the architecture, not just volume.
-- **Percentiles over averages** — p50, p95, p99, p999. Mean latency hides tail pain. Tail latency amplification: in fan-out architectures, the slowest backend call sets the user-perceived latency.
-- Scaling up (vertical) vs scaling out (horizontal) — no universal answer, depends on load shape.
-
-### Maintainability
-
-Three design principles:
-- **Operability** — make it easy for ops to keep things running (monitoring, deploys, runbooks).
-- **Simplicity** — manage complexity through good abstractions. Accidental complexity compounds silently.
-- **Evolvability** — make change easy. Requirements will change; the system should accommodate that without rewrites.
-
-### OLTP vs OLAP
-
-| | OLTP | OLAP |
-|---|---|---|
-| **Pattern** | Many small reads/writes | Few large scans/aggregations |
-| **Users** | End users via applications | Analysts, dashboards, reports |
-| **Latency** | Low (ms) | Higher acceptable (seconds-minutes) |
-| **Data shape** | Current state, row-oriented | Historical, column-oriented |
-
-Key distinction: it's the **access pattern** that defines OLTP vs OLAP, not the audience. A user-facing dashboard aggregating millions of rows is OLAP workload even though an end user sees it.
-
-## Applied Connections
-
-- **Tail latency amplification** — CloudFront → Varnish → HAProxy → origin. Each hop is a fan-out point. One slow origin response dominates the user experience at p99.
-- **OLTP** — DynamoDB serving React apps, API responses for user-facing traffic.
-- **OLAP** — Datadog aggregating APM spans across millions of traces for dashboards.
-- **Operability** — Datadog RUM/APM, GitLab CI pipelines, CDK-managed infra. All reduce operational burden.
-- **Accidental complexity** — every abstraction layer (CDK, CloudFront behaviors, caching rules) can compound if not managed.
+The access pattern defines the workload, not the audience. OLTP is many small reads/writes with low latency (user-facing apps, DynamoDB). OLAP is fewer large scans and aggregations where seconds-to-minutes latency is acceptable (analytics dashboards, Datadog aggregating APM spans). A user-facing dashboard aggregating millions of rows is OLAP even though an end user sees it.
 
 ## Open Questions
 
-- How does 2e handle the shift toward serverless (Lambda, edge compute) in the scalability discussion? Traditional vertical/horizontal framing doesn't map cleanly.
-- Where does Kleppmann draw the line between "tolerate faults" and "prevent faults"? In practice, some faults (data corruption) need prevention, not tolerance.
-- The OLTP/OLAP boundary is blurring — real-time analytics, HTAP databases. Does 2e address this convergence?
+- How does 2e handle serverless and edge compute in the scalability discussion? Traditional vertical/horizontal framing doesn't map cleanly to Lambda.
+- The OLTP/OLAP boundary is blurring with real-time analytics and HTAP databases. Does 2e address this convergence?
