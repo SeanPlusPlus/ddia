@@ -11,8 +11,8 @@ applied/         # Deep-dive primers on specific concepts
 
 ## Progress
 
-| Chapter | Status |
-|---------|--------|
-| 1 | Done |
-| 2 | Done |
-| 3 | **Current** |
+| Chapter | Title | Description | Status |
+|---------|-------|-------------|--------|
+| 1 | Reliable, Scalable, and Maintainable Applications | Three pillars as competing tensions, OLTP vs OLAP | Done |
+| 2 | Non-Functional Requirements | Latency vs throughput, faults vs failures, [fan-out primer](applied/fan-out-primer.md) | Done |
+| 3 | | | **Current** |
