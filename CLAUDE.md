@@ -8,6 +8,12 @@ Structured notes and exercises from working through *Designing Data-Intensive Ap
 
 Software engineer with 10+ years experience building production distributed systems on AWS. Hands-on with caching layers, event-driven architectures, CI/CD, and observability at scale.
 
+## Study Approach
+
+**Find gems, dig deep, move on.** Not trying to exhaustively cover every section — skip what's already familiar, zero in on concepts that click or challenge, and work those until the mental model is solid. Then next chapter.
+
+Don't push for completeness. No need to cover every topic in a chapter. If the interesting stuff is done, it's done.
+
 ## How to Help
 
 When discussing DDIA concepts:
@@ -17,6 +23,7 @@ When discussing DDIA concepts:
 - **Challenge understanding** — ask probing questions, don't just summarize
 - **Applied examples** — when a concept maps to a real system (DynamoDB = LSM-tree, CloudFront = CDN consistency model), call it out
 - **No hand-holding** — assume production distributed systems experience, skip the basics
+- **Don't nag about unfinished sections** — if the user moves on, the chapter is done
 
 ## Repo Structure
 
