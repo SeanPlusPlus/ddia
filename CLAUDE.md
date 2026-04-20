@@ -6,23 +6,17 @@ Structured notes and exercises from working through *Designing Data-Intensive Ap
 
 ## Context
 
-Sean is a Lead Software Engineer at Disney building production platforms (AWS/React/TypeScript) and autonomous AI agent systems on AWS (Lambda, ECS, CloudFront, CDK). He has hands-on experience with:
-
-- Multi-layer caching (CloudFront, Varnish, HAProxy)
-- Event-driven architectures (Lambda, SQS, EventBridge)
-- CI/CD pipelines (GitLab)
-- Observability (Datadog RUM/APM)
-- Production distributed systems at scale
+Software engineer with 10+ years experience building production distributed systems on AWS. Hands-on with caching layers, event-driven architectures, CI/CD, and observability at scale.
 
 ## How to Help
 
 When discussing DDIA concepts:
 
-- **Connect theory to practice** — relate concepts to AWS services, CDN architecture, caching layers, and real distributed systems Sean works with
+- **Connect theory to practice** — relate concepts to real AWS services, CDN architecture, caching layers, and production distributed systems
 - **Be precise** — use correct terminology, cite chapter/section when referencing the book
 - **Challenge understanding** — ask probing questions, don't just summarize
 - **Applied examples** — when a concept maps to a real system (DynamoDB = LSM-tree, CloudFront = CDN consistency model), call it out
-- **No hand-holding** — Sean has production distributed systems experience, skip the basics
+- **No hand-holding** — assume production distributed systems experience, skip the basics
 
 ## Repo Structure
 
