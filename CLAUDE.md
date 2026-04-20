@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Structured notes and exercises from working through *Designing Data-Intensive Applications* (2nd Edition) by Martin Kleppmann.
+Structured notes from working through *Designing Data-Intensive Applications* (2nd Edition) by Martin Kleppmann.
 
 ## Context
 
@@ -13,6 +13,8 @@ Software engineer with 10+ years experience building production distributed syst
 **Find gems, dig deep, move on.** Not trying to exhaustively cover every section — skip what's already familiar, zero in on concepts that click or challenge, and work those until the mental model is solid. Then next chapter.
 
 Don't push for completeness. No need to cover every topic in a chapter. If the interesting stuff is done, it's done.
+
+**Method:** Read the chapter, debrief with Claude, Claude writes the notes from the conversation. Review, edit, commit.
 
 ## How to Help
 
@@ -29,8 +31,7 @@ When discussing DDIA concepts:
 
 ```
 notes/           # Chapter-by-chapter reading notes
-exercises/       # Worked examples and thought experiments
-applied/         # Connections to real systems
+applied/         # Deep-dive primers on specific concepts
 ```
 
 ## Conventions
