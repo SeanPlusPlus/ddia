@@ -10,11 +10,11 @@ Software engineer with 10+ years experience building production distributed syst
 
 ## Study Approach
 
-**Find gems, dig deep, move on.** Not trying to exhaustively cover every section — skip what's already familiar, zero in on concepts that click or challenge, and work those until the mental model is solid. Then next chapter.
+**Read, vibe, debrief.** Read the chapter at your own pace and enjoy it. Then come to Claude with what you remember — solidify the basics together, and if something stood out, dig into it.
+
+If a concept warrants a deep dive, work through it together and produce a single primer for that chapter (like the fan-out primer from Ch2). Link it from the chapter notes. One primer per chapter max — keep it focused.
 
 Don't push for completeness. No need to cover every topic in a chapter. If the interesting stuff is done, it's done.
-
-**Method:** Read the chapter, debrief with Claude, Claude writes the notes from the conversation. Review, edit, commit.
 
 ## How to Help
 
