@@ -39,3 +39,11 @@ Hardware faults are random and independent. Software and human faults **correlat
 ### Tolerate vs Prevent
 
 Most faults (node down, network blip) — tolerate through redundancy and graceful degradation. Some faults (data corruption, security breach) — **prevention is the only option**, because recovery may be impossible or the damage undetectable.
+
+## Scalability
+
+Scalability isn't binary — it's always "scalable *with respect to what*?" You describe load with parameters specific to your system (req/s, read/write ratio, fan-out factor), then ask what happens to performance as those parameters grow.
+
+The Twitter home timeline is the chapter's standout example. The fan-out shape of the follow graph — not raw volume — drove the entire architecture. Normal users fan out on write (push tweets to followers' caches), celebrities fan out on read (fetched at timeline load), and the system merges both paths. One follower_count threshold determines the whole write path.
+
+Deep dive: [Fan-Out Primer](../applied/fan-out-primer.md)

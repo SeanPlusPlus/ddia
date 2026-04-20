@@ -35,6 +35,7 @@ applied/         # Connections to real systems
 
 ## Conventions
 
-- Notes use markdown with clear headers per section
+- Chapter notes start with a **TL;DR** and end with **Open Questions** (when applicable)
+- Chapter summaries should be **concise, human-readable prose** — not bullet-point lists. Write like you're explaining it to someone, not cataloguing it.
+- When a concept warrants a deep dive, write a standalone primer in `applied/` and link to it from the chapter notes. Chapter notes stay lean; primers go deep.
 - Diagrams use Mermaid where possible (renders on GitHub)
-- Each chapter note starts with a **TL;DR** and ends with **Open Questions**
