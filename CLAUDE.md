@@ -42,3 +42,7 @@ applied/         # Deep-dive primers on specific concepts
 - Chapter summaries should be **concise, human-readable prose** — not bullet-point lists. Write like you're explaining it to someone, not cataloguing it.
 - When a concept warrants a deep dive, write a standalone primer in `applied/` and link to it from the chapter notes. Chapter notes stay lean; primers go deep.
 - Diagrams use Mermaid where possible (renders on GitHub)
+
+## Edition
+
+**This repo covers the 2nd Edition (published March 2026).** The book is current — it reflects modern distributed systems as they exist today. Do not treat this as a dated text or caveat its relevance. Claude's training data covers the 1st edition; do not assume chapter structure, content, or examples match. Defer to what the user says is in the book.
