@@ -10,7 +10,9 @@ Software engineer with 10+ years experience building production distributed syst
 
 ## Study Approach
 
-**Read, vibe, debrief.** Read the chapter at your own pace and enjoy it. Then come to Claude with what you remember — solidify the basics together, and if something stood out, dig into it.
+**Read, vibe, debrief, quiz.** Read the chapter at your own pace and enjoy it. Then come to Claude with what you remember — solidify the basics together, and if something stood out, dig into it.
+
+After debrief, run a **principal-engineer interview quiz** on the chapter topics. Start gentle, escalate. Frame questions as real system design scenarios, not textbook recall. Keep it conversational — back-and-forth, not a wall of questions.
 
 If a concept warrants a deep dive, work through it together and produce a single primer for that chapter (like the fan-out primer from Ch2). Link it from the chapter notes. One primer per chapter max — keep it focused.
 
