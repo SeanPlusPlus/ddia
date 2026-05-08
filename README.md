@@ -1,6 +1,6 @@
 # DDIA 2e Study Notes
 
-Notes and deep-dive primers from working through *Designing Data-Intensive Applications* (2nd Edition) by Martin Kleppmann. Not exhaustive — focused on the concepts that click, challenge, or connect to real production systems.
+Notes and deep-dive primers from working through *Designing Data-Intensive Applications* (2nd Edition) by Martin Kleppmann. Not exhaustive. Focusing on the concepts that click, challenge, or connect to real production systems.
 
 ## Structure
 
